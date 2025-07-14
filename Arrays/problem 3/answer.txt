@@ -1,0 +1,12 @@
+public class Solution {
+    public int[] PlusOne(int[] digits) {
+        int num =1;
+        for(int i=0; i < digits.Length; i++)
+           num +=(int)(digits[digits.Length -1-i]* Math.Pow(10, i));
+        string numText= num.ToString();
+        int[] ans=new int[numText.Length];
+        for(int i=0; i < numText.Length; i++)
+           ans[i] = numText[i] -'0';
+        return ans;
+    } 
+}

@@ -1,0 +1,11 @@
+public class Solution {
+    public int[] RunningSum(int[] nums) {
+        int[] arrayOfSums = new int [nums.Length];
+        int previusSum =0;
+        for(int i = 0;i<nums.Length;i++){
+            arrayOfSums[i]=nums[i]+previusSum;
+            previusSum =arrayOfSums[i];
+        }
+        return arrayOfSums;
+    }
+}
