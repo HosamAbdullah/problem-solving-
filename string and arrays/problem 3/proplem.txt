@@ -1,34 +1,30 @@
-125. Valid Palindrome
+242. Valid Anagram
 Solved
 Easy
 Topics
 premium lock icon
 Companies
-A phrase is a palindrome if, after converting all uppercase letters into lowercase letters and removing all non-alphanumeric characters, it reads the same forward and backward. Alphanumeric characters include letters and numbers.
-
-Given a string s, return true if it is a palindrome, or false otherwise.
+Given two strings s and t, return true if t is an anagram of s, and false otherwise.
 
  
 
 Example 1:
 
-Input: s = "A man, a plan, a canal: Panama"
+Input: s = "anagram", t = "nagaram"
+
 Output: true
-Explanation: "amanaplanacanalpanama" is a palindrome.
+
 Example 2:
 
-Input: s = "race a car"
-Output: false
-Explanation: "raceacar" is not a palindrome.
-Example 3:
+Input: s = "rat", t = "car"
 
-Input: s = " "
-Output: true
-Explanation: s is an empty string "" after removing non-alphanumeric characters.
-Since an empty string reads the same forward and backward, it is a palindrome.
+Output: false
+
  
 
 Constraints:
 
-1 <= s.length <= 2 * 105
-s consists only of printable ASCII characters.
+1 <= s.length, t.length <= 5 * 104
+s and t consist of lowercase English letters.
+ 
+
